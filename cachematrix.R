@@ -1,6 +1,6 @@
-These functions set a matrix in a new environment and return the inverse of the matrix
+#These functions set a matrix in a new environment and return the inverse of the matrix
 
-This function set any matrix in a new environment and "define" necessary functions for the next function ('set', 'setinv', 'get' and 'getinv')
+#This function set any matrix in a new environment and "define" necessary functions for the next function ('set', 'setinv', 'get' and 'getinv')
 
 makeCacheMatrix <- function(x = matrix()) {
 v<-NULL
@@ -15,7 +15,7 @@ list(set=set,get=get,setinv=setinv,getinv=getinv)
 }
 
 
-This function take the information of the above function (the "necessary" functions and the matrix) and return the inverse of the matrix.
+#This function take the information of the above function (the "necessary" functions and the matrix) and return the inverse of the matrix.
 
 cacheSolve <- function(x, ...) {
 v<-x$getinv()
